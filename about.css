@@ -1,0 +1,45 @@
+.ABOUT {
+    height: 280px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: -50px;
+  }
+
+.ABOUTcontain {
+    color: white;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 30px;
+    text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	width: 1000px;
+	height: 300px;
+}
+
+/*FOR PHONE*/
+@media only screen and (max-width: 380px), (max-width: 1025px){
+	.ABOUT {
+		height: 200px;
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	  }
+	
+	.ABOUTcontain {
+		color: white;
+		font-family: 'IBM Plex Mono', monospace;
+		font-size: 10px;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+		width: 95%;
+		height: 110px;
+	}
+}

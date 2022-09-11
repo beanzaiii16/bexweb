@@ -1,0 +1,53 @@
+.ESPORT {
+    height: 420px;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: -50px;
+  }
+
+.ESPORTcontain {
+    color: white;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 30px;
+    text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 200px;
+	width: 1000px;
+	height: 300px;
+}
+
+.mobilenav {
+	font-size: 0;
+  }
+
+#checkbox {
+	display: none;
+}
+/*FOR PHONE*/
+@media only screen and (max-width: 380px), (max-width: 1025px){
+	.ESPORT {
+		height: 200px;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 30px;
+	  }
+	
+	.ESPORTcontain {
+		color: white;
+		font-family: 'IBM Plex Mono', monospace;
+		font-size: 15px;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 100px;
+		width: 95%;
+		height: 200px;
+	}
+}

@@ -1,0 +1,12 @@
+.topgif {
+    height: 100%;
+    width: 100%;
+}
+
+/*FOR PHONE*/
+@media only screen and (max-width: 380px) , (max-width: 1025px){
+    .topgif {
+        height: 15%;
+        width: 100%;
+    }
+}

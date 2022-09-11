@@ -1,0 +1,220 @@
+.topnav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+    transition: 0.4s;
+    position: fixed;
+    width: 99%;
+    top: 4px;
+    z-index: 99;
+    background-color: rgb(0, 20, 4);
+    height: 42px;
+  }
+  
+  .mint {
+    background-color: #490074;
+    font-family: fantasy;
+  }
+  
+  .topnav-left {
+    float: left;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 14px;
+    border-radius: 4px;
+  }
+  
+  .topnav a:hover {
+    background: #49b800;
+    color: #000000;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+  }
+  
+  .topnav .toplogo2 {
+    align-items: center;
+    transition: 0.4s;
+  }
+  
+  .discord {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  
+  }
+  
+  .discord:hover {
+    opacity: 0.7;
+  }
+  
+  .fab {
+    padding: 10px;
+    font-size: 30px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fab:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook,
+  .fa-twitter,
+  .fa-instagram,
+  .discord,
+  .fa-shopping-cart {
+    color: #FFF;
+    text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+    -webkit-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+    -moz-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+    -o-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+    transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+  }
+  
+  .mobilenav {
+    font-size: 0;
+  }
+  
+  /*--------------*/
+  /*--------------*/
+  /*--------------*/
+  /*--------------*/
+  
+  /*FOR PHONE*/
+  @media only screen and (max-width: 380px),
+  (max-width: 1025px) {
+    .topnav {
+      display: none;
+    }
+  
+    .wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      clip-path: circle(25px at calc(100% - 45px) 45px);
+      transition: all 0.3s ease-in-out;
+      z-index: 222;
+    }
+  
+    #active:checked~.wrapper {
+      clip-path: circle(75%);
+    }
+  
+    .menu-btn {
+      position: fixed;
+      z-index: 2222;
+      right: 10px;
+      top: 20px;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+      background: rgb(72, 255, 0);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    #active:checked~.menu-btn {
+      color: #fff;
+    }
+  
+    #active:checked~.menu-btn i:before {
+      content: "\f00d";
+    }
+  
+    .wrapper ul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
+    }
+  
+    .wrapper ul li {
+      margin: 15px 0;
+    }
+  
+    .wrapper ul li a {
+      color: none;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 5px 30px;
+      color: #fff;
+      border-radius: 50px;
+      background: #000;
+      position: relative;
+      line-height: 50px;
+      transition: all 0.3s ease;
+    }
+  
+    .wrapper ul li a:after {
+      position: absolute;
+      content: "";
+      background: #fff;
+      background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+      width: 105%;
+      height: 111%;
+      left: -2%;
+      top: -4%;
+      border-radius: 80px;
+      transform: scaleY(0);
+      z-index: -1;
+      animation: rotate 1.5s linear infinite;
+      transition: transform 0.3s ease;
+    }
+  
+    .wrapper ul li a:hover:after {
+      transform: scaleY(1);
+    }
+  
+    .wrapper ul li a:hover {
+      color: #fff;
+    }
+  
+    input[type="checkbox"] {
+      display: none;
+    }
+  
+    @keyframes rotate {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+  
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+  }
